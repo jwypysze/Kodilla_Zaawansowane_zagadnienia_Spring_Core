@@ -15,4 +15,10 @@ class AppConfiguration {
     public BeanMonitor beanMonitor() {
         return new BeanMonitor();
     }
+
+    @Bean
+    public AnyBean anyBean() {
+        return new AnyBean();
+    }
+
 }
