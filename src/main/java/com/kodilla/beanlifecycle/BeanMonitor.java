@@ -21,7 +21,4 @@ public class BeanMonitor implements BeanPostProcessor {
         return bean;
     }
 
-    //metody pozwalają na zmodyfikowanie beana podczas jego tworzenia - przed i po inicjalizacji
-    //mechanizm mozna wykorzystac do globalnej zmiany zachowania niektorych beanow - piszac kod tylko w jednym miejsu
-
 }
