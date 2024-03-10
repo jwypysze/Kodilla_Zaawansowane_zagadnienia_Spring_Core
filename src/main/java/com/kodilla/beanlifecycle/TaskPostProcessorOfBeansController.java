@@ -10,8 +10,8 @@ public class TaskPostProcessorOfBeansController {
 
     @ResponseBody
     @RequestMapping(path = "/create", method = RequestMethod.GET)
-    public AnyBean create() {
-        return new AnyBean();
+    public LibraryManager create() {
+        return new LibraryManager();
     }
 
 }

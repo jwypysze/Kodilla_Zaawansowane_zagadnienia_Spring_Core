@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Scope;
 class AppConfiguration {
 
     @Bean
+    @Scope("prototype")
     public LibraryManager libraryManager() {
         return new LibraryManager();
     }
@@ -17,10 +18,5 @@ class AppConfiguration {
         return new BeanMonitor();
     }
 
-    @Bean
-    @Scope("prototype")
-    public AnyBean anyBean() {
-        return new AnyBean();
-    }
 
 }

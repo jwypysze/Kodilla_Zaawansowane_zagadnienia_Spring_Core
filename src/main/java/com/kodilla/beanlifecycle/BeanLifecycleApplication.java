@@ -13,12 +13,8 @@ public class BeanLifecycleApplication {
 		context.register(AppConfiguration.class);
 		context.refresh();
 
-
-		AnyBean anyBean = context.getBean(t.create().getClass());
-		AnyBean anyBean2 = context.getBean(t.create().getClass());
-		AnyBean anyBean3 = context.getBean(t.create().getClass());
-		AnyBean anyBean4 = context.getBean(t.create().getClass());
-		AnyBean anyBean5 = context.getBean(t.create().getClass());
+		LibraryManager manager = context.getBean(LibraryManager.class);
+		System.out.println("Context and beans are set up and ready to work");
 
 		context.close();
 
